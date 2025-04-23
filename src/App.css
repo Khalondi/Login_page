@@ -126,12 +126,6 @@ button {
   .form input {
     width: 100%;
   }
-  .rememberme {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    justify-content: flex-start;
-  }
 }
 @media screen and (max-width: 600px) {
   .layout {
@@ -166,10 +160,5 @@ button {
   }
   .right img {
     display: none;
-  }
-  .rememberme {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
   }
 }
