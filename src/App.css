@@ -56,6 +56,7 @@ body {
   gap: 20px;
   height: 530px;
   width: 100%;
+  margin-left: -9px;
 }
 
 .form label {
@@ -105,8 +106,70 @@ button {
 .noaccount {
   text-align: center;
 }
-@media only screen and(max-width:640px) {
-  .right {
+@media screen and (max-width: 780px) {
+  .right img {
     display: none;
+  }
+  .form {
+    justify-content: center;
+  }
+  .layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  button {
+    width: 100%;
+    max-width: 320px;
+  }
+  .form input {
+    width: 100%;
+  }
+  .rememberme {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .layout {
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .right img {
+    display: none;
+  }
+  .rememberme {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .right img {
+    display: none;
+  }
+  .rememberme {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .right img {
+    display: none;
+  }
+  .rememberme {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
   }
 }
