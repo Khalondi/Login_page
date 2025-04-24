@@ -44,18 +44,20 @@ function Login() {
             />
           </div>
           <div className="rememberme">
-            <label>
+            <div className="checkremember">
               <input
                 type="checkbox"
                 name="rememberme"
                 value={data.remberme}
                 onChange={handleChange}
               />
-              Remember me?
-            </label>
-            <a href="#" style={{ textDecoration: "none", color: "#181818" }}>
-              Forgot password
-            </a>
+              <label id="rember">Remember me?</label>
+            </div>
+            <div className="forgot">
+              <a href="#" style={{ textDecoration: "none", color: "#181818" }}>
+                Forgot password
+              </a>
+            </div>
           </div>
           <button type="submit" onClick={Submit} className="signin">
             Sign in

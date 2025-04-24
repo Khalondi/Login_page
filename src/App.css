@@ -118,13 +118,23 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 40px;
+    overflow-y: hidden;
+    height: fit-content;
+  }
+  body {
+    height: fit-content;
+  }
+  .container {
+    justify-content: center;
   }
   button {
-    width: 100%;
-    max-width: 320px;
+    max-width: 100%;
   }
   .form input {
-    width: 100%;
+    width: 95%;
+  }
+  .checkremember input {
+    width: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -134,14 +144,34 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    overflow-y: hidden;
+    height: fit-content;
+    max-width: fit-content;
+  }
+  .rememberme {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .checkremember {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .checkremember input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .forgot {
+    display: block;
+    margin-top: 10px;
   }
   .right img {
     display: none;
-  }
-  .rememberme {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -149,16 +179,49 @@ button {
     display: none;
   }
   .rememberme {
-    flex-direction: column;
-    align-items: flex-start;
     margin-bottom: 10px;
+  }
+
+  .layout {
+    overflow-y: hidden;
+    height: fit-content;
   }
 }
 @media screen and (max-width: 768px) {
   .layout {
     grid-template-columns: 1fr;
+    overflow-y: hidden;
+    height: 100vh;
   }
   .right img {
     display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .layout {
+    height: 650px;
+    gap: 10px;
+    max-width: fit-content;
+  }
+  .right img {
+    display: none;
+  }
+  body {
+    font-size: small;
+  }
+  .rememberme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .checkremember {
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .forgot {
+    display: block;
+    margin-top: 10px;
   }
 }
