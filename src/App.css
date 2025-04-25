@@ -112,7 +112,8 @@ button {
   }
   .form {
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: -10px;
   }
   .layout {
     display: flex;
