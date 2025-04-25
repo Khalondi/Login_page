@@ -51,7 +51,7 @@ function Login() {
                 value={data.remberme}
                 onChange={handleChange}
               />
-              <label id="rember">Remember me?</label>
+              <label id="remember">Remember me?</label>
             </div>
             <div className="forgot">
               <a href="#" style={{ textDecoration: "none", color: "#181818" }}>

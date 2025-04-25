@@ -112,12 +112,13 @@ button {
   }
   .form {
     justify-content: center;
+    gap: 10px;
   }
   .layout {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     overflow-y: hidden;
     height: fit-content;
   }
